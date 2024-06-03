@@ -5,8 +5,8 @@ const PORT = 3000;
 
 app.use('/', express.static(path.join(__dirname, 'public')));
 
-app.get('/ping', (req, res) => {
-    res.json({ ping: 'pong' })
+app.get('/helloworld', (req, res) => {
+    res.json('<h1>helloworld</h1>')
 })
 
 app.listen(PORT, () => {
